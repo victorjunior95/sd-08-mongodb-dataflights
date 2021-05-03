@@ -3,31 +3,31 @@
 // Para isso, escreva no arquivo desafio27.js duas queries, nesta ordem:
 // Conte quantos voos da empresa PASSAREDO cujo campo natureza possua valor igual a Doméstica e crie uma query que insira na coleção resumoVoos um documento com os campos: empresa (nome da empresa) e totalVoosDomesticos (o total retornado anteriormente).
 // Em uma segunda query, retorne a empresa e o totalVoosDomesticos do primeiro documento presente na coleção resumoVoos em que a empresa seja PASSAREDO.
-const PASSAREDO = 'PASSAREDO';
+const PASSAREDO = "PASSAREDO";
 
 db.voos.find(
-  { 'empresa.nome': PASSAREDO,
-natureza: 'Doméstica' },
+  { "empresa.nome": PASSAREDO,
+natureza: "Doméstica" },
 ).count();
 
 db.resumoVoos.insertOne({
   empresa: PASSAREDO,
   totalVoosDomesticos: db.voos.find(
-    { 'empresa.nome': PASSAREDO,
-  natureza: 'Doméstica' },
+    { "empresa.nome": PASSAREDO,
+  natureza: "Doméstica" },
   ).count(),
 });
 
 // também é possível fazer : 
 // const totalVoos = db.voos.find(
-//   { 'empresa.nome': PASSAREDO,
-// natureza: 'Doméstica' },
+//   { "empresa.nome": PASSAREDO,
+// natureza: "Doméstica" },
 // ).count();
 
 // db.resumoVoos.insertOne({
 //   empresa: PASSAREDO,
 //   totalVoosDomesticos: totalVoos,
-// }); ou mesmo igualar o nome do valor ao da propriedade/chave do objeto para usar 'shorthand'
+// }); ou mesmo igualar o nome do valor ao da propriedade/chave do objeto para usar "shorthand"
 
 db.resumoVoos.findOne(
   { empresa: PASSAREDO },

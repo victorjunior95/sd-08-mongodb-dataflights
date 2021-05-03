@@ -116,7 +116,7 @@ Nesse projeto você vai elaborar _queries_ em `mongo` para:
         * `git status` (deve aparecer listado o arquivo _challenges/desafio1.js_ em verde)
   * Faça o `commit` inicial
       * Exemplo:
-        * `git commit -m 'iniciando o projeto MongoDB dataflights'` (fazendo o primeiro commit)
+        * `git commit -m "iniciando o projeto MongoDB dataflights"` (fazendo o primeiro commit)
         * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
 
 5. Adicione a sua branch com o novo `commit` ao repositório remoto

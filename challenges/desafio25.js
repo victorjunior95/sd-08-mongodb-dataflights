@@ -2,6 +2,6 @@
 db.voos.deleteMany({
   $and: [ 
   { litrosCombustivel: { $exists: 1, $lt: 400 } },
-  { 'empresa.nome': 'AZUL' },
+  { "empresa.nome": "AZUL" },
   ],
 });

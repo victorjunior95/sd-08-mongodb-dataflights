@@ -15,7 +15,7 @@ scripts/exec.sh "db.dropDatabase()"
 
 scripts/join_splitted_files.sh "$DB_RESTORE_DIR"
 
-# Extract BSON's
+# Extract BSON"s
 for assetDirectory in "$DB_RESTORE_DIR"/*/
 do
     for compressedFile in "$assetDirectory"*.tar.gz
