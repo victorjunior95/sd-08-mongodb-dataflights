@@ -1,4 +1,4 @@
 // 13 - Retorne a quantidade de documentos em que o campo aeroportoDestino.continente não seja igual a EUROPA, ÁSIA e OCEANIA.
 db.voos.find(
-  { "aeroportoDestino.pais": { $nin: ["BRASIL", "ARGENTINA", "CHILE"] } },
+  { "aeroportoDestino.continente": { $nin: ["EUROPA", "ÁSIA", "OCEANIA"] } },
 ).count();
