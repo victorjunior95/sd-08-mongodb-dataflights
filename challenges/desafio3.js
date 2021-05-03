@@ -1,0 +1,1 @@
+db.countDocuments({"empresa.nome": "AZUL"});
