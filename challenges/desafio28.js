@@ -1,3 +1,4 @@
+const LATAM_AIRLANES_BRASIL = "LATAM AIRLINES BRASIL";
 const quantity = db.voos.count(
   { 
     $and: 
@@ -6,7 +7,7 @@ const quantity = db.voos.count(
         natureza: "Doméstica",
       }, 
       { 
-        "empresa.nome": "PASSAREDO",
+        "empresa.nome": LATAM_AIRLANES_BRASIL,
       },
     ], 
   },
@@ -14,14 +15,14 @@ const quantity = db.voos.count(
 
 db.resumoVoos.insertOne(
   {
-    empresa: "PASSAREDO",
+    empresa: LATAM_AIRLANES_BRASIL,
     totalVoosDomesticos: quantity,
   },
 );
 
 db.resumoVoos.find(
   {
-    empresa: "PASSAREDO",
+    empresa: LATAM_AIRLANES_BRASIL,
   }, 
   {
     empresa: 1,
