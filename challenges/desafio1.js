@@ -1,1 +1,1 @@
-// Começando
+db.voos.find().count();
