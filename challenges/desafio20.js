@@ -1,2 +1,2 @@
-db.voos.findOne({ rtk: { $exists: false } }, {
-  vooId: true });
+db.voos.find({ rtk: { $exists: false } }, {
+  vooId: true }).limit(1);
