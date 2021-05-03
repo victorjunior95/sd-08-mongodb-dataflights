@@ -1,1 +1,2 @@
-// Leonardo Sardinha
+db.voos.find().count();
+
