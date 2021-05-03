@@ -1,8 +1,8 @@
-const company = 'PASSAREDO';
+const company = "PASSAREDO";
 
 const totalVoos = db.voos.find(
-  { 'empresa.nome': company,
-    natureza: 'Doméstica',  
+  { "empresa.nome": company,
+    natureza: "Doméstica",  
   },
 ).count();
 
