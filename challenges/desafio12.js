@@ -1,3 +1,3 @@
 db.voos.count({
-  'aeroportoDestino.pais': { $in: ['BRASIL', 'ARGENTINA', 'CHILE'] },
+  "aeroportoDestino.pais": { $in: ["BRASIL", "ARGENTINA", "CHILE"] },
 });
