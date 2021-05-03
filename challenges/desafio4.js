@@ -1,1 +1,1 @@
-db.voos.countDocuments({"empresa.nome": "GOL"});
+db.voos.countDocuments({ 'empresa.nome': 'GOL' });
