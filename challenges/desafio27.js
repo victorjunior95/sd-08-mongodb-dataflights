@@ -2,9 +2,13 @@
 // Em uma segunda query, retorne a empresa e o totalVoosDomesticos do primeiro documento presente na coleção resumoVoos em que a empresa seja PASSAREDO.
 db.resumoVoos.insertOne(
     {
-      empresa: "PASAREDO",
-      totalVoosDomesticos: db.voos
-        .countDocuments({ "empresa.nome": "PASSAREDO", natureza: "Doméstica" }),
+      empresa: "PASSAREDO",
+      totalVoosDomesticos: db.voos.countDocuments(
+        { 
+          "empresa.nome": "PASSAREDO",
+          natureza: "Doméstica",
+        },
+      ),
     },    
 );
-db.resumoVoos.findOne({ empresa: "PASSAREDO" });
+db.resumoVoos.findOne({ empresa: "PASSAREDO" }, { _id: 0, empresa: 1, totalVoosDomesticos: 1 });
