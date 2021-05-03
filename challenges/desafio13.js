@@ -1,7 +1,7 @@
 db.voos.find({
-  'aeroportoDestino.continente': {
+  "aeroportoDestino.continente": {
     $not: {
-      $in: ['EUROPA', 'ÁSIA', 'OCEANIA'],
+      $in: ["EUROPA", "ÁSIA", "OCEANIA"],
     },
   },
 }).count();

@@ -1,5 +1,5 @@
 db.voos.find({
   natureza: {
-    $eq: 'Doméstica',
+    $eq: "Doméstica",
   },
 }).count();

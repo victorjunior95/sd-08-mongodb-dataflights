@@ -1,5 +1,5 @@
 db.voos.find({
-  'passageiros.pagos': {
+  "passageiros.pagos": {
     $gt: 7000,
   },
 }, {

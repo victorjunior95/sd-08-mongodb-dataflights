@@ -1,5 +1,5 @@
 db.voos.find({
   natureza: {
-    $eq: 'Internacional',
+    $eq: "Internacional",
   },
 }).count();
