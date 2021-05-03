@@ -1,1 +1,1 @@
-db.voos.find({ "aeroportoOrigem.pais": { $not: "BRASIL" } });
+db.voos.find({ "aeroportoOrigem.pais": { $not: { $eq: "BRASIL" } } });
