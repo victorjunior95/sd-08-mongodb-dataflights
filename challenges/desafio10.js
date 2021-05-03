@@ -3,4 +3,6 @@ db.voos.find({
   vooId: true,
   'empresa.nome': true,
   'aeroportoOrigem.nome': true,
-  'aeroportoDestino.nome': true }).limit(10);
+  'aeroportoDestino.nome': true,
+  mes: true,
+  ano: true }).limit(10);
