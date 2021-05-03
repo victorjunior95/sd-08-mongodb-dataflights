@@ -1,7 +1,7 @@
-const nomeEmpresa = 'PASSAREDO';
+const nomeEmpresa = "PASSAREDO";
 const QntVoosDomesticos = db.voos.find({ $and: [
-  { 'empresa.nome': nomeEmpresa },
-  { natureza: 'Doméstica' },
+  { "empresa.nome": nomeEmpresa },
+  { natureza: "Doméstica" },
 ] }).count();
 
 db.resumoVoos.insertOne({ empresa: nomeEmpresa, totalVoosDomesticos: QntVoosDomesticos });
