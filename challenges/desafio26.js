@@ -1,10 +1,10 @@
 db.voos.deleteMany({
   $and: [
     {
-      "empresa.nome": { $eq: "GOL" },
+      'empresa.nome': { $eq: 'GOL' },
     },
     {
-      "passageiros.pagos": { $gte: 5, $lte: 10 },
+      'passageiros.pagos': { $gte: 5, $lte: 10 },
     },
   ],
 });
