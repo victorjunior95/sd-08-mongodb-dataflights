@@ -1,5 +1,4 @@
 const nomeEmpresa = 'PASSAREDO';
-
 const QntVoosDomesticos = db.voos.find({ $and: [
   { 'empresa.nome': nomeEmpresa },
   { natureza: 'Doméstica' },
