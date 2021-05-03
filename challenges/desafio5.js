@@ -1,2 +1,2 @@
 // 5 - Retorne o vooId do décimo ao décimo segundo documento da coleção voos.
-db.voos.find({}, { vooId: 1 }).skip(9).limit(2);
+db.voos.find({}, { vooId: 1 }).skip(9).limit(3);
