@@ -1,6 +1,6 @@
-const LATAM_AIRLINES_BRASIL = 'LATAM AIRLINES BRASIL';
+const LATAM_AIRLINES_BRASIL = "LATAM AIRLINES BRASIL";
 const selectQuantity = db.voos.count({
-     'empresa.nome': LATAM_AIRLINES_BRASIL, natureza: 'Doméstica',
+     "empresa.nome": LATAM_AIRLINES_BRASIL, natureza: "Doméstica",
     });
 
 db.resumoVoos.insertOne(
