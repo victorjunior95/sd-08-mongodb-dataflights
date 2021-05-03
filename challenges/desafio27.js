@@ -7,4 +7,23 @@
 db.voos.find(
   { 'empresa.nome': 'PASSAREDO',
 natureza: 'Doméstica' },
-);
+).count();
+
+db.resumoVoos.insertOne({
+  empresa: 'PASSAREDO',
+  totalVoosDomesticos: db.voos.find(
+    { 'empresa.nome': 'PASSAREDO',
+  natureza: 'Doméstica' },
+  ).count(),
+});
+
+// também é possível fazer : 
+// const totalVoos = db.voos.find(
+//   { 'empresa.nome': 'PASSAREDO',
+// natureza: 'Doméstica' },
+// ).count();
+
+// db.resumoVoos.insertOne({
+//   empresa: 'PASSAREDO',
+//   totalVoosDomesticos: totalVoos,
+// }); ou mesmo igualar o nome do valor ao da propriedade/chave do objeto para usar 'shorthand'
