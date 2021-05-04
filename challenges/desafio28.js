@@ -1,5 +1,5 @@
 const totalVoosDomesticos = db.voos.find(
-  { "empresa.nome": "LATAM AIRLINES BRASIL", natureza: "Doméstica" }
+  { "empresa.nome": "LATAM AIRLINES BRASIL", natureza: "Doméstica" },
   ).count();
 
 const empresa = "LATAM AIRLINES BRASIL";
