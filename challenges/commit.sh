@@ -1,3 +1,3 @@
 git status
 git add --all
-git commit -am "REQ-6 BUILD"
+git commit -am "[FIX]: 'REQ-6 BUILD' "
