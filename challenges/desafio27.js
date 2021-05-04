@@ -6,4 +6,4 @@ const totalVoosDomesticos = db.voos.count({
 });
 
 db.resumoVoos.insertOne({ empresa: "PASSAREDO", totalVoosDomesticos });
-db.resumoVoos.find();
+db.resumoVoos.find({}, { _id: 0 });
