@@ -1,3 +1,3 @@
 git status
 git add --all
-git commit -am "Fixing: Initial Commit"
+git commit -am "REQ-1 BUILD"
