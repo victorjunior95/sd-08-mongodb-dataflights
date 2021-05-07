@@ -8,3 +8,10 @@ Para isso, escreva no arquivo desafio27.js duas queries, nesta ordem:
 
 2) Em uma segunda query, retorne a empresa e o totalVoosDomesticos do primeiro documento presente na coleção resumoVoos em que a empresa seja PASSAREDO.
 */
+db.resumoVoos.insertOne({
+  empresa: "PASSAREDO",
+  // Tentei com aggregation mas não consegui, olhei o código do José Bernardo para fazer desse jeito
+  totalVoosDomesticos: db.voos.count({ "empresa.nome": "PASSAREDO", natureza: "Doméstica" }),
+});
+
+db.resumoVoos.find({ empresa: "PASSAREDO" }, { totalVoosDomesticos: 1, _id: 0 });
