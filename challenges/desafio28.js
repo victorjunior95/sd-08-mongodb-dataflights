@@ -1,5 +1,6 @@
-db.voos.updateMany({ "empresa.nome": "LATAM AIRLINES BRASIL", natureza: "Doméstica" },
- { $set: { empresa: "LATAM AIRLINES BRASIL", totalVoosDomesticos: 20026 } });
+const tam = "LATAM AIRLINES BRASIL";
+db.voos.updateMany({ {"empresa.nome": {$tam}}, natureza: "Doméstica" },
+ { $set: { empresa:  {$tam} }, totalVoosDomesticos: 20026 } });
 
 db.voos.find({ 
   natureza: "Doméstica", 
