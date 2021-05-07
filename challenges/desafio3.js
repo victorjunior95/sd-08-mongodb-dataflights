@@ -1,2 +1,2 @@
 // 3 - Retorne a quantidade de voos da empresa AZUL.
-db.voos.count({ "empresa.nome": "AZUL" }).limit(10);
+db.voos.count({ "empresa.nome": "AZUL" });
