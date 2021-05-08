@@ -2,11 +2,11 @@ db.voos.find(
   {
     "aeroportoDestino.continente":
     {
-      $nor:
+      $nin:
       [
-        { $eq: "EUROPA" },
-        { $eq: "ÁSIA" },
-        { $eq: "OCEANIA" },
+        "EUROPA",
+        "ÁSIA",
+        "OCEANIA",
       ],
     },
   },

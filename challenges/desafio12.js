@@ -2,11 +2,11 @@ db.voos.find(
   {
     "aeroportoDestino.pais":
     {
-      $or:
+      $in:
       [
-        { $eq: "BRASIL" },
-        { $eq: "ARGENTINA" },
-        { $eq: "CHILE" },
+        "BRASIL",
+        "ARGENTINA",
+        "CHILE",
       ],
     },
   },
