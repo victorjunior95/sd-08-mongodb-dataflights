@@ -1,5 +1,5 @@
-let counter = db.voos.count({ 'empresa.nome': 'PASSAREDO', 'natureza': 'Doméstica' });
+const counter = db.voos.count({ "empresa.nome": "PASSAREDO", natureza: "Doméstica" });
 
-db.resumoVoos.insertOne({ 'empresa': 'PASSAREDO', 'totalVoosDomesticos': counter });
+db.resumoVoos.insertOne({ empresa: "PASSAREDO", totalVoosDomesticos: counter });
 
-db.resumoVoos.findOne({}, { '_id': 0 });
+db.resumoVoos.findOne({}, { _id: 0 });
