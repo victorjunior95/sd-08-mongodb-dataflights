@@ -4,8 +4,8 @@
 // });
 
 db.resumoVoos.insertOne({
-  empresa: 'PASSAREDO',
+  empresa: "PASSAREDO",
   totalVoosDomesticos: 4187,
 });
 
-db.resumoVoos.findOne({ empresa: 'PASSAREDO' }, { _id: 0 });
+db.resumoVoos.findOne({ empresa: "PASSAREDO" }, { _id: 0 });
