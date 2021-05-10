@@ -1,12 +1,12 @@
-db.voos.count(
-  { 
-    natureza: "Doméstica",
-    "empresa.nome": "PASSAREDO",
-  },
-);
-
 db.resumoVoos.insertOne(
-  { empresa: "PASSAREDO", totalVoosDomesticos: 4187 },
+  { empresa: "PASSAREDO", 
+    totalVoosDomesticos:
+    db.voos.count(
+    { 
+      natureza: "Doméstica",
+      "empresa.nome": "PASSAREDO",
+    },
+  ) },
 );
 
 db.resumoVoos.findOne(

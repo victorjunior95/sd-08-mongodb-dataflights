@@ -4,6 +4,8 @@ Rodar testes
 
 Restaurar banco 
 DBNAME=dataFlights ./scripts/resetdb.sh assets
+
+https://github.com/tryber/sd-08-mongodb-dataflights/pull/96
 -->
 
 ### Termos e acordos
