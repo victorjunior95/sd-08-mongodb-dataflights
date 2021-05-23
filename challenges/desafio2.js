@@ -1,0 +1,1 @@
+db.voos.find({ "empresa.nome": { $in: ["AZUL"] } }).limit(10).pretty();
