@@ -1,1 +1,1 @@
-db.voos.find({}, { _id: 0, vooId: 1 }).skip(11).limit(1);
+db.voos.find({}, { _id: 0, vooId: 1 }).limit(3).skip(9);
