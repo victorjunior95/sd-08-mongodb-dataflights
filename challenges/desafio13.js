@@ -1,1 +1,1 @@
-db.voos.find({ "aeroportoDestino.continente": { $nin: ["EUROPA", "ASIA", "OCEANIA"] } }).count();
+db.voos.count({ "aeroportoDestino.continente": { $nin: ["EUROPA", "ÁSIA", "OCEANIA"] } });
